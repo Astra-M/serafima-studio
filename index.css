@@ -1,3 +1,47 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide {
+}
+
+.swiper-image {
+  width: 100%;
+}
+
+.swiper-button-prev::after {
+  color: #fff;
+}
+.swiper-button-next::after {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  /* color: #fff; */
+  background-color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.swiper-scrollbar {
+  margin: 0px 0 10px 0;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #fff;
+  cursor: pointer;
+}
+
 .page {
   background-color: #fff;
   margin: 0 auto;
@@ -249,3 +293,67 @@
   padding: 0px 20px 40px 20px;
   margin: 0 auto 40px;
 }
+.arrivals-gallery {
+  display: grid;
+  height: 400px;
+  margin: 80px auto;
+  padding: 0;
+  /* padding: 20px 0 20px 0; */
+  /* background-color: red; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "image1 image1 image2"
+    "image1 image1 image3"
+    "image4 image4 image3";
+  row-gap: 10px;
+  column-gap: 10px;
+  list-style-type: none;
+}
+
+.arrivals-gallery__item1 {
+  grid-area: image1;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #ccc;
+  background-image: url("./images/regalis-denim.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrivals-gallery__item2 {
+  grid-area: image2;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #ccc;
+  background-image: url("./images/regalis-obereg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrivals-gallery__item3 {
+  grid-area: image3;
+  background-image: url("./images/regalis-fucsia.JPG");
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrivals-gallery__item4 {
+  grid-area: image4;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #ccc;
+  background-image: url("./images/regalis_capuchino.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .arrivals-gallery__image {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+ 
+} */
