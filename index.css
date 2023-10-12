@@ -119,6 +119,7 @@
   box-sizing: border-box;
   text-transform: uppercase;
   align-self: center;
+  cursor: pointer;
 }
 
 .shop-button_transparent {
@@ -335,7 +336,7 @@
   }
 }
 .arrivals-gallery__item {
-  height: 354px;
+  height: 340px;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 2px 2px 6px #ccc;
