@@ -1,11 +1,11 @@
-// import Swiper bundle with all modules installed
-// import Swiper from "swiper/bundle";
+import Swiper from "swiper/swiper-bundle";
+import "swiper/css/bundle";
 
-// import styles bundle
-// import "swiper/css/bundle";
+// import Swiper from "swiper";
+// import "swiper/css";
 
 // init Swiper:
-const swiper = new Swiper(".swiper", {
+export const swiper = new Swiper(".swiper", {
   // Optional parameters
   // slidesPerView: 3,
   // spaceBetween: 24,
@@ -33,5 +33,4 @@ const swiper = new Swiper(".swiper", {
     dragSize: 80,
   },
 });
-
-swiper.enable();
+// console.log("swiper initialized");

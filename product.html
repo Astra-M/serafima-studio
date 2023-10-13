@@ -24,8 +24,9 @@
   <body class="page">
     <div class="page__container">
       <h1 class="product-title">Браслет регализ «Ванильный капучино»</h1>
-      <!-- Slider main container -->
-      <div class="swiper">
+
+      <!-- Основной слайдер -->
+      <div class="swiper mySwiper2">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -46,6 +47,23 @@
               alt=""
             />
           </div>
+          <div class="swiper-slide">
+            <img src="./images/regalis-pero.JPG" class="swiper-image" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/regalis-fucsia.JPG"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/bracelet-spring.JPG"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -53,16 +71,80 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-scrollbar-drag"></div>
       </div>
+
+      <!--Слайдер с иконками  -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./images/regalis-denim.jpg" class="swiper-image" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/regalis-obereg.jpg"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/regalis_capuchino.jpg"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/regalis-pero.JPG" class="swiper-image" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/regalis-fucsia.JPG"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/bracelet-spring.JPG"
+              class="swiper-image"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
       <p class="product-description">
         Две бусины цвета кофе и карамели, а по центру — бусина в виде кофейных
         зернышек. Ммммм… как вкусно!
       </p>
       <button type="button">в корзину</button>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+    <!-- <script type="module" src="./index.js"></script> -->
   </body>
 </html>
