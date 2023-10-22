@@ -24,112 +24,120 @@
   <body class="page">
     <div class="page__container">
       <div class="product-card">
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-denim.jpg"
-                class="swiper-image"
-                alt=""
-              />
+        <div class="slider-wrapper">
+          <!-- Основной слайдер -->
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-denim.jpg"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-obereg.jpg"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis_capuchino.jpg"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-pero.JPG"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-fucsia.JPG"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/bracelet-spring.JPG"
+                  class="swiper-image"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-obereg.jpg"
-                class="swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis_capuchino.jpg"
-                class="swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-pero.JPG"
-                class="swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-fucsia.JPG"
-                class="swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/bracelet-spring.JPG"
-                class="swiper-image"
-                alt=""
-              />
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!--Слайдер с иконками  -->
+          <div thumbsSlider="" class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-denim.jpg"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-obereg.jpg"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis_capuchino.jpg"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-pero.JPG"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/regalis-fucsia.JPG"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/bracelet-spring.JPG"
+                  class="thumbs-swiper-image"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
 
-        <!--Слайдер с иконками  -->
-        <div thumbsSlider="" class="swiper mySwiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-denim.jpg"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-obereg.jpg"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis_capuchino.jpg"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-pero.JPG"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/regalis-fucsia.JPG"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/bracelet-spring.JPG"
-                class="thumbs-swiper-image"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <h1 class="product-card__title">Браслет регализ Сочная фуксия</h1>
         <div class="product-card__info">
+          <h1 class="product-card__title">Браслет регализ Сочная фуксия</h1>
+
+          <span class="product-card__label product-card__label_price">
+            3 500 руб.</span
+          >
           <div class="product-card__labels">
-            <span class="product-card__label product-card__label_description"
+            <span
+              class="product-card__label product-card__label_description product-card__label_visible"
               >Описание</span
             >
             <span class="product-card__label product-card__label_details"
