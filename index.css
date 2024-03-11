@@ -1,131 +1,40 @@
-/* .swiper {
-  width: 100%;
-  height: 100%;
-} */
-
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Свайпер большой фотки товара */
-.mySwiper2 {
-  height: 300px;
-  width: 100%;
-  box-sizing: border-box;
-  object-fit: cover;
-}
-
-/* .swiper { */
-/* отвечает за ширину полоски иконок */
-/* width: 100%;
-height: 100px;
-margin: 20 auto; */
-/* box-sizing: border-box;
-  object-fit: cover; */
-/* } */
-
-/* Свайпер маленьких иконок товара */
-.mySwiper {
-  height: 100px;
-  box-sizing: border-box;
-  padding: 5px 0;
-  /* object-fit: cover; */
-}
-/* .mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-} */
-
-.thumbs-swiper-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.6;
-  object-fit: cover;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-}
-
-.swiper-image {
-  display: block;
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}  */
-
-.swiper-button-prev::after {
-  color: #fff;
-}
-.swiper-button-next::after {
-  color: #fff;
-}
-
-.swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-  width: 25px;
-  height: 25px;
-  opacity: 1;
-  background-color: #fff;
-}
-
-.swiper-scrollbar {
-  margin: 0px 0 10px 0;
-}
-
-.swiper-scrollbar-drag {
-  background-color: #fff;
-  cursor: pointer;
-}
-
 .page {
   background-color: #fff;
   margin: 0 auto;
   padding: 6px;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .page__container {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   max-width: 1280px;
   margin: 0 auto;
   color: #000;
-  background-color: #fff;
   box-sizing: border-box;
+}
+.product-header {
+}
+.product-header__nav {
+}
+.product-header__nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.product-header__nav-item {
+  padding: 0 10px 0 0;
+}
+
+.product-header__nav-item:last-of-type {
+  padding: 0;
+}
+
+.product-header__nav-link {
+  text-decoration: none;
+  color: #333333;
 }
 
 .product-card {
@@ -271,6 +180,7 @@ margin: 20 auto; */
 
 .shop-button_size_small {
   width: 80%;
+  max-width: 180px;
   height: 30px;
   font-size: 15px;
   font-weight: 400;
@@ -514,4 +424,89 @@ margin: 20 auto; */
 .arrivals-gallery__item4 {
   grid-area: image4;
   background-image: url("./images/regalis_capuchino.jpg");
+}
+
+/* Свайпер большой фотки товара */
+.mySwiper2 {
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+/* Свайпер маленьких иконок товара */
+.mySwiper {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 0;
+  /* object-fit: cover; */
+}
+
+.thumbs-swiper-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.swiper-image {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  */
+
+.swiper-button-prev::after {
+  color: #fff;
+}
+.swiper-button-next::after {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.swiper-scrollbar {
+  margin: 0px 0 10px 0;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #fff;
+  cursor: pointer;
 }
