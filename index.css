@@ -1,19 +1,33 @@
 .page {
   background-color: #fff;
   margin: 0 auto;
-  padding: 6px;
+  padding: 0;
+  color: #000;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 .page__container {
   max-width: 1280px;
   margin: 0 auto;
-  color: #000;
-  box-sizing: border-box;
+  /* рэппер для всех структурных блоков страницы (хедер, мейн и футер), в нем
+  оверфлоу хидден, чтобы не было горизонтального скролла при выпадании элементов
+  за пределы экрана при работе с адаптивностью   или позиционированием. */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 6px;
 }
 .product-header {
+  background-color: #ffcccc;
+  padding: 6px;
+  box-sizing: border-box;
 }
 .product-header__nav {
 }
@@ -424,6 +438,21 @@
 .arrivals-gallery__item4 {
   grid-area: image4;
   background-image: url("./images/regalis_capuchino.jpg");
+}
+
+.footer {
+  background-color: #ffcccc;
+  padding: 6px;
+  /* делаем у футера сверху внешние отступы автоматические, пока футер не упрется в 
+  конец блока - рэппера для страницы */
+  margin-top: auto;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.footer__copyright {
+  color: #333333;
 }
 
 /* Свайпер большой фотки товара */
