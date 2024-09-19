@@ -207,6 +207,7 @@
   border: 1px solid #747474;
   color: #747474;
   margin: 0 auto;
+  cursor: pointer;
 }
 @media (min-width: 600px) {
   .shop-button_transparent {
@@ -345,16 +346,17 @@
 } */
 
 .personal-order {
-  width: 80%;
   padding: 40px 20px 40px 20px;
-  /* margin: 0 auto 40px; */
   background-color: #f4f1ed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
+@media (min-width: 600px) {
+  .personal-order {
+    width: 80%;
+  }
+}
 .personal-order__text {
   color: #747474;
   line-height: 1.4;
@@ -364,8 +366,8 @@
 .personal-order__wrapper {
   display: flex;
   flex-direction: column;
-  width: 80%;
   justify-content: center;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -380,22 +382,25 @@
 }
 
 .arrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
-  padding: 0px 20px 40px 20px;
-  margin: 0 auto 40px;
+  padding: 40px 20px 40px 20px;
+  margin: 0 auto;
 }
-.arrivals-gallery {
+/* .arrivals-gallery {
   display: flex;
   flex-direction: column;
   column-gap: 50px;
 
   list-style-type: none;
-}
+} */
 
 .arrivals-gallery {
   display: grid;
-  height: 400px;
-  margin: 80px auto;
+  /* height: 400px; */
+  /* margin: 40px auto; */
   padding: 0;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -412,7 +417,9 @@
   .arrivals-gallery {
     display: grid;
     height: 400px;
-    margin: 80px auto;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin: 40px auto 0px;
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
