@@ -386,16 +386,9 @@
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 0px 40px 0px;
   margin: 0 auto;
 }
-/* .arrivals-gallery {
-  display: flex;
-  flex-direction: column;
-  column-gap: 50px;
-
-  list-style-type: none;
-} */
 
 .arrivals-gallery {
   display: grid;
@@ -418,7 +411,6 @@
     display: grid;
     height: 400px;
     width: 100%;
-    /* margin: 0 auto; */
     margin: 40px auto 0px;
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
@@ -575,8 +567,15 @@
 .cover__subtitle {
 }
 .footer {
-}
-.footer__container {
+  height: 10vh;
+  background-color: #fbceb5;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer__copyright {
+  color: white;
+  margin: 0;
 }
