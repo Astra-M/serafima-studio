@@ -37,8 +37,14 @@
               Выберите один из готовых браслетов или закажите особенный, по
               Вашему вкусу
             </p>
-            <a href="product.html">
-              <button type="button" class="shop-button">посмотреть</button>
+            <a
+              href="product.html"
+              rel="noopener noreferrer"
+              class="shop-button"
+              target="_blank"
+            >
+              открыть
+              <!-- <button type="button" class="shop-button">посмотреть</button> -->
             </a>
           </div>
         </section>
@@ -120,16 +126,33 @@
               Заказать
             </button>
           </div>
+          <!-- <section class="arrivals"></section>
+          <h2 class="bestsellers__title">Выберите свой браслет в каталоге</h2> -->
         </section>
 
         <section class="arrivals">
           <h2 class="bestsellers__title">Выберите свой браслет в каталоге</h2>
+          <!-- Картинка может быть ссылкой: для этого оберните <img> в <a>. -->
           <ul class="arrivals-gallery">
-            <!-- обернуть в ссылки лишки -->
-            <li class="arrivals-gallery__item arrivals-gallery__item1"></li>
-            <li class="arrivals-gallery__item arrivals-gallery__item2"></li>
-            <li class="arrivals-gallery__item arrivals-gallery__item3"></li>
-            <li class="arrivals-gallery__item arrivals-gallery__item4"></li>
+            <li>
+              <a href="./index.html" class="arrivals-gallery__link">
+                <img
+                  src="./images/regalis-fucsia.JPG"
+                  class="arrivals-gallery__item"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="arrivals-gallery__link">
+                <img
+                  class="arrivals-gallery__item"
+                  src="./images/regalis-fucsia.JPG"
+                  class="arrivals-gallery__image"
+                  alt=""
+                />
+              </a>
+            </li>
           </ul>
         </section>
       </main>

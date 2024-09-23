@@ -114,14 +114,14 @@
   color: #333333;
   padding: 5px;
   border-radius: 4px;
-  border-color: #ffcccc;
+  border-color: #fbceb5;
   border-width: 1px;
   border-style: solid;
   margin: 0 20px 0 0;
 }
 
 .product-card__label_visible {
-  background-color: #ffcccc;
+  background-color: #fbceb5;
   color: #fff;
 }
 
@@ -180,8 +180,8 @@
   height: 43px;
   margin: 0px;
   border-radius: 4px;
-  background-color: #ff9999;
-  color: #fff;
+  background-color: #fbceb5;
+  color: white;
   border: none;
   font-size: 15px;
   font-weight: 400;
@@ -193,7 +193,7 @@
 }
 
 .shop-button_size_small {
-  width: 80%;
+  width: 40%;
   max-width: 180px;
   height: 30px;
   font-size: 15px;
@@ -389,12 +389,17 @@
   padding: 40px 0px 40px 0px;
   margin: 0 auto;
 }
-
 .arrivals-gallery {
-  display: grid;
-  /* height: 400px; */
-  /* margin: 40px auto; */
-  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .arrivals-gallery {
+  display: grid; */
+/* height: 400px; */
+/* margin: 40px auto; */
+/* padding: 0;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
@@ -404,9 +409,9 @@
     "image4";
   row-gap: 20px;
   list-style-type: none;
-}
+} */
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .arrivals-gallery {
     display: grid;
     height: 400px;
@@ -423,25 +428,34 @@
     column-gap: 10px;
     list-style-type: none;
   }
+} */
+.arrivals-gallery__link {
+  background-color: red;
+  display: block;
 }
 .arrivals-gallery__item {
   height: 340px;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 2px 2px 6px #ccc;
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #66cccc; */
 }
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .arrivals-gallery__item {
     height: 100%;
-  }
+  }  */
+.arrivals-gallery {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
-
-.arrivals-gallery__item1 {
-  grid-area: image1;
-  background-image: url("./images/regalis-denim.jpg");
+.arrivals-gallery__image {
+  /* height: 100%; */
+  /* background-color: #cc667c; */
+  /* background-image: url("./images/regalis-denim.jpg"); */
 }
 
 .arrivals-gallery__item2 {
