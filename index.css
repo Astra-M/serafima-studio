@@ -386,91 +386,43 @@
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  min-height: 600px;
   padding: 40px 0px 40px 0px;
   margin: 0 auto;
 }
-.arrivals-gallery {
+
+.arrivals__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  align-items: start;
+  justify-items: start;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  /* min-height: 500px; */
+  background-color: blue;
 }
 
-/* .arrivals-gallery {
-  display: grid; */
-/* height: 400px; */
-/* margin: 40px auto; */
-/* padding: 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "image1"
-    "image2"
-    "image3"
-    "image4";
-  row-gap: 20px;
-  list-style-type: none;
-} */
+.arrivals__item {
+  /* либо ширина и высота при заданной точно высоте родителя, либо аспект */
+  /* height: 100%;
+  width: 100%; */
+  aspect-ratio: 1 / 1;
+}
 
-/* @media (min-width: 600px) {
-  .arrivals-gallery {
-    display: grid;
-    height: 400px;
-    width: 100%;
-    margin: 40px auto 0px;
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "image1 image1 image2"
-      "image1 image1 image3"
-      "image4 image4 image3";
-    row-gap: 10px;
-    column-gap: 10px;
-    list-style-type: none;
-  }
-} */
-.arrivals-gallery__link {
-  background-color: red;
+.arrivals__link {
   display: block;
-}
-.arrivals-gallery__item {
-  height: 340px;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 2px 2px 6px #ccc;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #66cccc; */
-}
-/* @media (min-width: 600px) {
-  .arrivals-gallery__item {
-    height: 100%;
-  }  */
-.arrivals-gallery {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-.arrivals-gallery__image {
-  /* height: 100%; */
-  /* background-color: #cc667c; */
-  /* background-image: url("./images/regalis-denim.jpg"); */
+  background-color: red;
+  /* если аспект, то должна быть задана ширина и высота 100% у детей, чтобы передать им аспект */
+  height: 100%;
+  width: 100%;
 }
 
-.arrivals-gallery__item2 {
-  grid-area: image2;
-  background-image: url("./images/regalis-obereg.jpg");
-}
-
-.arrivals-gallery__item3 {
-  grid-area: image3;
-  background-image: url("./images/regalis-fucsia.JPG");
-}
-
-.arrivals-gallery__item4 {
-  grid-area: image4;
-  background-image: url("./images/regalis_capuchino.jpg");
+.arrivals__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -592,4 +544,45 @@
 .footer__copyright {
   color: white;
   margin: 0;
+}
+
+.grid {
+  display: grid;
+  height: 400px;
+  margin: 40px auto 0px;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "image1 image1 image2"
+    "image1 image1 image2"
+    "image1 image1 image2";
+  row-gap: 10px;
+  column-gap: 10px;
+  list-style-type: none;
+}
+
+.item {
+  /* именно мин высота! тогда высота будет подстраиваться под высоту родителя */
+  min-height: 300px;
+  min-width: 300px;
+  background-color: #66cccc;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #ccc;
+  box-sizing: border-box;
+}
+.image1 {
+  grid-area: image1;
+  height: 300px;
+  width: 300px;
+  background-color: #f498ad;
+}
+
+.image2 {
+  grid-area: image2;
+  background-color: #747474;
+}
+.link {
+  display: grid;
 }
